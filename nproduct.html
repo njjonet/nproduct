@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>nproduct – Product Management Consultancy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #fcf8f2;
+      color: #a43f00;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 520px;
+      margin: 48px auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 6px 32px rgba(210,92,18,0.08);
+      padding: 40px 32px 32px 32px;
+      text-align: center;
+    }
+    .logo {
+      width: 480px;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: #d25c12;
+    }
+    p {
+      font-size: 1.15rem;
+      margin-bottom: 24px;
+    }
+    ul {
+      text-align: left;
+      margin: 0 auto 28px auto;
+      padding: 0;
+      list-style: none;
+      max-width: 350px;
+    }
+    ul li {
+      margin-bottom: 14px;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+    .cta-btn {
+      background: #d25c12;
+      color: #fff;
+      padding: 16px 36px;
+      border-radius: 8px;
+      font-size: 1.15rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-bottom: 18px;
+      box-shadow: 0 2px 8px rgba(210,92,18,0.13);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .cta-btn:hover {
+      background: #a43f00;
+    }
+    .testimonial {
+      font-size: 1rem;
+      color: #b65b1a;
+      margin-bottom: 28px;
+      font-style: italic;
+    }
+    .contact {
+      margin-top: 36px;
+      background: #fff7eb;
+      border-radius: 16px;
+      padding: 28px 18px 18px 18px;
+      text-align: left;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      margin-bottom: 12px;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #e5c9b6;
+      font-size: 1rem;
+      font-family: inherit;
+    }
+    .contact button {
+      background: #d25c12;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .contact button:hover {
+      background: #a43f00;
+    }
+    @media (max-width: 600px) {
+      .container, .contact {
+        padding: 18px 6px;
+      }
+      .logo {
+        width: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <img src="nproduct-logo-banner.png" alt="nproduct logo" class="logo">
+
+    <!-- Headline -->
+    <h1>Product Management, Done Right.</h1>
+    <p>Helping teams in Singapore and beyond build better products, faster.</p>
+
+    <!-- Value Proposition -->
+    <ul>
+      <li>🚀 <strong>Agile Coaching:</strong> Transform your teams with hands-on Scrum and agile leadership.</li>
+      <li>🧭 <strong>Product Strategy:</strong> Clarify your vision, roadmap, and go-to-market plans.</li>
+      <li>🤝 <strong>Workshops & Training:</strong> Upskill your people with practical, engaging sessions.</li>
+      <li>🌏 <strong>Global Perspective:</strong> Led by a multicultural team with deep roots in Singapore and Europe.</li>
+    </ul>
+
+    <!-- Social Proof -->
+    <div class="testimonial">
+      “nproduct helped us launch our app 3 months ahead of schedule. The workshops were a game-changer!”<br>
+      – Happy Client, Fintech Startup
+    </div>
+
+    <!-- Call to Action -->
+    <a href="#contact" class="cta-btn">Book a Free Consultation</a>
+    <p style="font-size: 0.98rem; color: #b65b1a;">
+      Or email us at <a href="mailto:hello@nproduct.com" style="color: #d25c12;">hello@nproduct.com</a>
+    </p>
+  </div>
+
+  <!-- Contact Form -->
+  <div class="contact" id="contact">
+    <h2 style="color: #d25c12; margin-top: 0;">Let's Chat</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="How can we help?" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</body>
+</html>
