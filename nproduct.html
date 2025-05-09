@@ -110,7 +110,33 @@
         width: 90px;
       }
     }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0; top: 0;
+      width: 100vw; height: 100vh;
+      overflow: auto;
+      background: rgba(0,0,0,0.32);
+    }
+    .modal-content {
+      background: #fff7eb;
+      margin: 10% auto;
+      padding: 32px 24px 18px 24px;
+      border-radius: 16px;
+      max-width: 400px;
+      box-shadow: 0 8px 32px rgba(210,92,18,0.13);
+      position: relative;
+    }
+    .close {
+      position: absolute;
+      right: 16px; top: 12px;
+      font-size: 2rem;
+      color: #d25c12;
+      cursor: pointer;
+    }
   </style>
+
 </head>
 <body>
   <div class="container">
@@ -118,16 +144,32 @@
     <img src="nproduct-logo-banner.png" alt="nproduct logo" class="logo">
 
     <!-- Headline -->
-    <h1>Product Management, Done Right.</h1>
-    <p>Helping teams in Singapore and beyond build better products, faster.</p>
+    <h1>Technical Product Management Consulting</h1>
+    <p>Helping product teams bridge the gap between strategy and execution — with hands-on, tech-savvy product guidance.</p>
 
     <!-- Value Proposition -->
     <ul>
-      <li>🚀 <strong>Agile Coaching:</strong> Transform your teams with hands-on Scrum and agile leadership.</li>
-      <li>🧭 <strong>Product Strategy:</strong> Clarify your vision, roadmap, and go-to-market plans.</li>
-      <li>🤝 <strong>Workshops & Training:</strong> Upskill your people with practical, engaging sessions.</li>
-      <li>🌏 <strong>Global Perspective:</strong> Led by a multicultural team with deep roots in Singapore and Europe.</li>
+      <li>🌟 <strong>Fractional Product Leadership:</strong> Embedded product leadership without the full-time overhead.</li>
+      <li>🧭 <strong>Product Strategy & Roadmapping:</strong> Turn vision into execution-ready plans.</li>
+      <li>⚖️ <strong>Tech & Product Alignment:</strong> Translate between engineering and business goals.</li>
+      <li>🚀 <strong>Team Coaching & Mentoring:</strong> Level up your PMs with practical, real-world guidance.</li>
+      <li>🌏 <strong>Global Perspective:</strong> Led with a multicultural mindset with roots in Singapore and Europe.</li>
     </ul>
+    
+    <section>
+      <h2>Hi, I’m Nuno — founder of nproduct.pro</h2>
+      <!-- insert Nuno photo here -->
+      <p>
+        With 15+ years of experience in product management and a background in technology,
+        I work with startups and scale-ups to build products that customers love — and engineers love building.
+        I have direct experience in banking, fintech, adtech and logistics, with many transferable learnings and patterns across these and other domains. 
+      </p>
+      <ul>
+        <li>🛠️ Technical enough to talk architecture.</li>
+        <li>🎯 Strategic enough to drive business outcomes.</li>
+        <li>👥 Human enough to lead teams with empathy.</li>
+      </ul>
+    </section>
 
     <!-- Social Proof -->
     <div class="testimonial">
@@ -136,13 +178,13 @@
     </div>
 
     <!-- Call to Action -->
-    <a href="#contact" class="cta-btn">Book a Free Consultation</a>
+    <a href="#" id="openModal" class="cta-btn">Let's talk!</a>
     <p style="font-size: 0.98rem; color: #b65b1a;">
       Or email us at <a href="mailto:hello@nproduct.com" style="color: #d25c12;">hello@nproduct.com</a>
     </p>
   </div>
 
-  <!-- Contact Form -->
+  <!-- Contact Form
   <div class="contact" id="contact">
     <h2 style="color: #d25c12; margin-top: 0;">Let's Chat</h2>
     <form>
@@ -151,6 +193,43 @@
       <textarea placeholder="How can we help?" rows="4" required></textarea>
       <button type="submit">Send Message</button>
     </form>
+  </div> -->
+
+  <!-- Modal Structure -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2 style="color: #d25c12;">Let's Chat</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="How can we help?" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
   </div>
+
+
+
+  <!-- Modal Script -->
+  <script>
+    const modal = document.getElementById('contactModal');
+    const openBtn = document.getElementById('openModal');
+    const closeBtn = document.getElementById('closeModal');
+    
+    openBtn.onclick = function(e) {
+      e.preventDefault();
+      modal.style.display = "block";
+    }
+    closeBtn.onclick = function() {
+      modal.style.display = "none";
+    }
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
+  
 </body>
 </html>
