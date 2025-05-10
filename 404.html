@@ -6,7 +6,77 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="favicon.png"> 
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background: #fcf8f2;
+      color: #a43f00;
+      font-family: 'Montserrat', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 500px;
+      margin: 60px auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 6px 32px rgba(210,92,18,0.08);
+      padding: 48px 32px 40px 32px;
+      text-align: center;
+    }
+    .logo {
+      width: 320px;
+      margin-bottom: 16px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: #d25c12;
+      margin: 0 0 12px 0;
+      letter-spacing: -2px;
+    }
+    .oops {
+      font-size: 1.5rem;
+      margin-bottom: 18px;
+      color: #a43f00;
+    }
+    .joke {
+      font-size: 1.1rem;
+      color: #b65b1a;
+      margin-bottom: 30px;
+    }
+    a.home-btn {
+      background: #d25c12;
+      color: #fff;
+      padding: 14px 32px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 18px;
+      box-shadow: 0 2px 8px rgba(210,92,18,0.13);
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    a.home-btn:hover {
+      background: #a43f00;
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 18px 6px;
+      }
+      .logo {
+        width: 320px;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style> 
 </head>
 <body>
   <div class="container">
