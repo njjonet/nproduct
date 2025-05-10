@@ -1,0 +1,214 @@
+ body {
+     background: #fcf8f2;
+     color: #a43f00;
+     font-family: 'Montserrat', Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+ .container {
+     max-width: 520px;
+     margin: 48px auto;
+     background: #fff;
+     border-radius: 24px;
+     box-shadow: 0 6px 32px rgba(210, 92, 18, 0.08);
+     padding: 40px 32px 32px 32px;
+     text-align: center;
+ }
+
+ .logo {
+     width: 480px;
+     margin-bottom: 24px;
+ }
+
+ h1 {
+     font-size: 2.2rem;
+     font-weight: 700;
+     margin-bottom: 12px;
+     color: #d25c12;
+ }
+
+ p {
+     font-size: 1.15rem;
+     margin-bottom: 24px;
+ }
+
+ ul {
+     text-align: left;
+     margin: 0 auto 28px auto;
+     padding: 0;
+     list-style: none;
+     max-width: 350px;
+ }
+
+ ul li {
+     margin-bottom: 14px;
+     font-size: 1.05rem;
+     line-height: 1.5;
+ }
+
+ .cta-btn {
+     background: #d25c12;
+     color: #fff;
+     padding: 16px 36px;
+     border-radius: 8px;
+     font-size: 1.15rem;
+     font-weight: 600;
+     text-decoration: none;
+     display: inline-block;
+     margin-bottom: 18px;
+     box-shadow: 0 2px 8px rgba(210, 92, 18, 0.13);
+     border: none;
+     cursor: pointer;
+     transition: background 0.2s;
+ }
+
+ .cta-btn:hover {
+     background: #a43f00;
+ }
+
+ .testimonial {
+     font-size: 1rem;
+     color: #b65b1a;
+     margin-bottom: 28px;
+     font-style: italic;
+ }
+
+ .contact {
+     margin-top: 36px;
+     background: #fff7eb;
+     border-radius: 16px;
+     padding: 28px 18px 18px 18px;
+     text-align: left;
+ }
+
+ .contact input,
+ .contact textarea {
+     width: 100%;
+     margin-bottom: 12px;
+     padding: 10px;
+     border-radius: 6px;
+     border: 1px solid #e5c9b6;
+     font-size: 1rem;
+     font-family: inherit;
+ }
+
+ .contact button {
+     background: #d25c12;
+     color: #fff;
+     padding: 12px 24px;
+     border-radius: 6px;
+     border: none;
+     font-size: 1rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.2s;
+ }
+
+ .contact button:hover {
+     background: #a43f00;
+ }
+
+ @media (max-width: 600px) {
+
+     .container,
+     .contact {
+         padding: 18px 6px;
+     }
+
+     .logo {
+         width: 320px;
+     }
+ }
+
+ .modal {
+     position: fixed;
+     z-index: 1000;
+     left: 0;
+     display: none;
+     top: 0;
+     width: 100vw;
+     height: 100vh;
+     background: rgba(0, 0, 0, 0.5);
+     /* Darker background for better contrast */
+     justify-content: center;
+     align-items: center;
+ }
+
+ .modal-content {
+     background: #fff7eb;
+     padding: 32px 24px;
+     border-radius: 16px;
+     max-width: 400px;
+     width: 90%;
+     /* Responsive width */
+     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+     /* Stronger shadow for depth */
+     position: relative;
+     text-align: center;
+     /* Center text inside */
+     animation: fadeIn 0.3s ease-in-out;
+     /* Smooth fade-in animation */
+ }
+
+ .modal-content h2 {
+     color: #d25c12;
+     font-size: 1.8rem;
+     margin-bottom: 16px;
+ }
+
+ .modal-content form input,
+ .modal-content form textarea {
+     width: 100%;
+     margin-bottom: 16px;
+     padding: 12px;
+     border-radius: 8px;
+     border: 1px solid #e5c9b6;
+     font-size: 1rem;
+     font-family: inherit;
+     box-sizing: border-box;
+ }
+
+ .modal-content form button {
+     background: #d25c12;
+     color: #fff;
+     padding: 12px 24px;
+     border-radius: 8px;
+     border: none;
+     font-size: 1rem;
+     font-weight: 600;
+     cursor: pointer;
+     transition: background 0.2s ease-in-out;
+     width: 100%;
+     /* Full-width button for modern look */
+ }
+
+ .modal-content form button:hover {
+     background: #a43f00;
+ }
+
+ .close {
+     position: absolute;
+     right: 16px;
+     top: 12px;
+     font-size: 1.5rem;
+     color: #d25c12;
+     cursor: pointer;
+     transition: color 0.2s ease-in-out;
+ }
+
+ .close:hover {
+     color: #a43f00;
+ }
+
+ @keyframes fadeIn {
+     from {
+         opacity: 0;
+         transform: scale(0.9);
+     }
+
+     to {
+         opacity: 1;
+         transform: scale(1);
+     }
+ }

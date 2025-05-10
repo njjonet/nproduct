@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>nproduct.pro - Product Management Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      background: #f9f9f9;
+    }
+    header {
+      background: #0a0a23;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 1.2em;
+    }
+    .cta-button {
+      background: #007BFF;
+      color: white;
+      padding: 0.75em 1.5em;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      text-decoration: none;
+      max-width: 800px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 0.5em;
+    }
+    ul {
+      padding-left: 1.5em;
+    }
+    .testimonial {
+      font-style: italic;
+      background: #f1f1f1;
+      padding: 1em;
+      border-left: 4px solid #007BFF;
+      margin: 1em 0;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a0a23;
+      color: white;
+      font-size: 0.9em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+      <img src="nproduct-logo-banner.png" alt="nproduct logo" width="480px" />
+      <h1>Technical Product Leadership</h1>
+      <p>Helping product teams bridge the gap between strategy and execution — with hands-on, tech-savvy product guidance.</p>
+      <a href="#contact" class="cta-button">Let’s Talk</a>
+    </div>
+  </header>
+
+  <section>
+    <h2>Hi, I’m Nuno — founder of nproduct.pro</h2>
+    <p>
+      With 15+ years of experience in product management and a background in technology,
+      I work with startups and scale-ups to build products that customers love — and engineers love building.
+      I have direct experience in banking, fintech, adtech and logistics, with many transferable learnings and patterns across these and other domains. 
+    </p>
+    <ul>
+      <li>🛠️ Technical enough to talk architecture.</li>
+      <li>🎯 Strategic enough to drive business outcomes.</li>
+      <li>👥 Human enough to lead teams with empathy.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What I Offer</h2>
+    <ul>
+      <li><strong>Fractional Product Leadership:</strong> Embedded product leadership without the full-time overhead.</li>
+      <li><strong>Product Strategy & Roadmapping:</strong> Turn vision into execution-ready plans.</li>
+      <li><strong>Tech & Product Alignment:</strong> Translate between engineering and business goals.</li>
+      <li><strong>Team Coaching & Mentoring:</strong> Level up your PMs with practical, real-world guidance.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Testimonials</h2>
+    <div class="testimonial">“Working with nproduct.pro helped us finally ship on time and with confidence. The mix of technical depth and product sense is rare — and invaluable.” — <strong>[Client Name], CTO at [Startup Name]</strong></div>
+    <div class="testimonial">“We went from chaos to clarity. This is what great product leadership looks like.” — <strong>[Client Name], CEO at [Scale-up Name]</strong></div>
+  </section>
+
+  <section id="contact" style="text-align:center;">
+    <h2>Let’s build something great together</h2>
+    <p>Have a challenge in mind? I’d love to hear about it.</p>
+    <a href="mailto:hello@nproduct.pro" class="cta-button">Schedule a Free Intro Call</a>
+  </section>
+
+  <footer>
+    <p>nproduct.pro © 2025<br>
+    🔗 <a href="https://www.linkedin.com/in/nunojonet/" style="color: white; text-decoration: underline;">LinkedIn</a></p>
+  </footer>
+</body>
+</html>
+
