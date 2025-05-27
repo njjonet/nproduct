@@ -73,12 +73,15 @@
     <div class="modal-content">
       <span class="close" id="closeModal">&times;</span>
       <h2 style="color: #d25c12;">Let's Chat</h2>
-      <form>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="a06cecb4-af07-4a6d-9674-8a1191fd6520">
         <input type="text" placeholder="Your Name" required>
         <p>
         <input type="email" placeholder="Your Email" required>
         <p>  
-        <textarea placeholder="How can we help?" rows="4" required></textarea>
+        <textarea name="message" placeholder="How can we help?" rows="4" required></textarea>
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
         <button type="submit">Send Message</button>
       </form>
     </div>
